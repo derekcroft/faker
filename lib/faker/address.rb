@@ -2,7 +2,11 @@ module Faker
   class Address
     class << self
       def zip_code
-        Faker.numerify(['#####', '#####-####'].rand)
+        Faker.numerify(['#####'].rand)
+      end
+
+      def zip_plus_four
+        Faker.numerify(['####'].rand)
       end
       
       def us_state
